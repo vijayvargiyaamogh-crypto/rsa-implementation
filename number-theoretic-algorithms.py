@@ -160,7 +160,7 @@ def gcd(a: int, b: int) -> int:
         # b is its own greatest divisor and obviously divides 0
     return gcd(b%a, a)
     # Because gcd(a, b) = gcd(b%a, a) but uses smaller numbers
-    # 0 <= b%a < a-1 and the first argument keeps shrinking
+    # 0 <= b%a <= a-1 and the first argument keeps shrinking
 
 def lcm(a: int, b: int) -> int:
     # Returns the least common multiple (LCM) of a and b
